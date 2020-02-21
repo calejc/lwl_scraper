@@ -1,5 +1,8 @@
 # Data
 
+# dk = Draftkings
+# nst = NaturalStatTrick
+
 # --------------- #
 #    NHL Teams    #
 # --------------- #
