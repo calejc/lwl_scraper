@@ -120,7 +120,3 @@ def get_lines(team_slug, *args):
             return lines
 
 
-
-
-if __name__ == "__main__":
-    print(get_lines('los-angeles-kings'))
