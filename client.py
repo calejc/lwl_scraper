@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, requests, json, pickle, data, utils
+import sys, os, requests, json, pickle, data, utils
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 load_dotenv()
@@ -97,7 +97,7 @@ def get_lines(team_slug, *args):
 
         # Powerplay lines    
         elif strength is "PP":
-            counter, line_counter, tmp, players = 1, 1, {}, {}
+            counter, line_counter, tmp, players = 1, 1, {}, []
             team_div = soup.find('div', {'class': 'team gutter'})  
 
             # (Probably a better way to do this)
@@ -118,5 +118,6 @@ def get_lines(team_slug, *args):
                 lines[line_counter] = tmp 
                 line_counter += 1
             return lines
+
 
 
