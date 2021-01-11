@@ -3,7 +3,7 @@ import sys, os, requests, json, pickle, data, utils
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 load_dotenv()
-# Only need to load 'dotenv' if you are using a .env file to store your credentials
+
 
 
 ##############
